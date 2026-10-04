@@ -19,6 +19,20 @@ npm run e2e          # roteiro completo no navegador (precisa do `npm run dev` r
 npm run build        # build de produção (PWA com manifest + service worker)
 ```
 
+### No Windows (Prompt de Comando ou PowerShell)
+
+Precisa do Node.js 20.19+ ou 22.12+ (`node -v`). Rode os comandos **dentro da pasta do projeto**, um por linha, sem os comentários `# ...`:
+
+```bat
+cd %USERPROFILE%
+git clone -b claude/barber-scheduling-saas-prototype-50zetm https://github.com/gutoznx9/prt.git barber-lab
+cd barber-lab
+npm install
+npm run dev
+```
+
+Abra http://localhost:5173. Para o `npm run e2e`, instale antes o navegador do Playwright: `npx playwright install chromium`.
+
 ## Roteiro da demonstração
 
 Também disponível no app em **⋯ → Roteiro da demonstração**.
